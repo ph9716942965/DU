@@ -51,14 +51,15 @@
         
         public function afterNewSave($event, $attributes = null)
         {
-           
-           try {
-            $userId = Yii::$app->user->identity->getId();
+            $userId = self::NO_USER_ID; 
             $userIpAddress = Yii::$app->request->getUserIP();
+        //    try {
+        //     $userId = Yii::$app->user->identity->getId();
+        //     $userIpAddress = Yii::$app->request->getUserIP();
             
-        } catch (Exception $e) {
-            $userId = self::NO_USER_ID;
-        }
+        // } catch (Exception $e) {
+        //     $userId = self::NO_USER_ID;
+        // }
 
         $newAttributes = $this->owner->getAttributes();
         $action = Yii::$app->controller->action->id;

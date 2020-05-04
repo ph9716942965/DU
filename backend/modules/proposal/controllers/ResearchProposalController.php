@@ -20,7 +20,7 @@ class ResearchProposalController extends Controller
     public function behaviors()
     {
         $_permission = ['index','view','delete', 'update'];
-        $_public_permission = ['create'];
+        $_public_permission = ['create','view'];
         
         return [
             'access' => [
