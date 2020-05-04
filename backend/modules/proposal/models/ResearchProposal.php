@@ -74,7 +74,7 @@ class ResearchProposal extends \yii\db\ActiveRecord
             [['ProjectDescription', 'Methodology', 'Milestones'], 'string', 'max' => 400],
             [['Materials', 'Infrastructure'], 'string', 'max' => 500],
             ['Email', 'email'],
-            [['cat1Email_1','cat1Email_2', 'cat2Email_1', 'cat2Email_2', 'cat3Email_1', 'cat3Email_1'],'email'],
+            [['cat1Email_1','cat1Email_2', 'cat2Email_1', 'cat2Email_2', 'cat3Email_1', 'cat3Email_2'],'email'],
         ];
     }
 
