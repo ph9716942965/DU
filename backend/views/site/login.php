@@ -27,7 +27,7 @@ $fieldOptions2 = [
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <h3><p class="login-box-msg"><b>TeePass</b> India</p></h3>
+        <h3><p class="login-box-msg"><b>Delhi</b> University</p></h3>
 
         <?php $form = ActiveForm::begin(['id' => 'login-form', 'enableClientValidation' => false]); ?>
 

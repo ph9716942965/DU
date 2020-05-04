@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
-    'name'=>'Admin TeePass India',
+    'name'=>'Admin DU',
     
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
