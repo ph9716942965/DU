@@ -13,8 +13,8 @@ return [
         'db' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=DU',
-            'username' => 'root',
-            'password' => 'welcome',
+            'username' => 'medi',
+            'password' => 'Welcome123',
             'charset' => 'utf8',
              'on afterOpen' => function($event) { 
                 $event->sender->createCommand("SET time_zone='+05:30';")->execute(); 
