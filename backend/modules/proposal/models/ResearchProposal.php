@@ -69,6 +69,7 @@ class ResearchProposal extends \yii\db\ActiveRecord
         return [
             [['name', 'Designation', 'College', 'Email', 'Mobile', 'ResearchProjectTitle', 'BroadSubjectArea', 'ProjectDescription', 'Innovative', 'cat1Name_1', 'cat1Department_1', 'cat1Name_2', 'cat1Department_2', 'cat2Name_1', 'cat2Department_1', 'cat2Name_2', 'cat2Department_2', 'cat3Name_1', 'cat3Department_1', 'cat3Name_2', 'cat3Department_2', 'Duration', 'Methodology', 'Milestones', 'Materials', 'Infrastructure'], 'required'],
             [['Mobile', 'Duration'], 'integer'],
+            ['Mobile', 'string', 'min'=>10, 'max'=>10],
             [['name', 'Designation', 'College', 'Email', 'ResearchProjectTitle', 'BroadSubjectArea', 'Innovative', 'cat1Name_1', 'cat1Email_1', 'cat1Department_1', 'cat1Name_2', 'cat1Email_2', 'cat1Department_2', 'cat2Name_1', 'cat2Email_1', 'cat2Department_1', 'cat2Name_2', 'cat2Email_2', 'cat2Department_2', 'cat3Name_1', 'cat3Email_1', 'cat3Department_1', 'cat3Name_2', 'cat3Email_2', 'cat3Department_2'], 'string', 'max' => 100],
             [['ProjectDescription', 'Methodology', 'Milestones'], 'string', 'max' => 400],
             [['Materials', 'Infrastructure'], 'string', 'max' => 500],
