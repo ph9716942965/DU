@@ -11,7 +11,7 @@ $this->title = "Dashboard";
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>demo</h3>
 
               <p>New Orders</p>
             </div>
@@ -26,7 +26,7 @@ $this->title = "Dashboard";
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>123</h3>
 
               <p>Total Confirm</p>
             </div>
@@ -41,7 +41,7 @@ $this->title = "Dashboard";
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>123</h3>
 
               <p>User Registrations</p>
             </div>
@@ -56,7 +56,7 @@ $this->title = "Dashboard";
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>XXX</h3>
+              <h3>1</h3>
 
               <p>Total Cancelled Booking</p>
             </div>
