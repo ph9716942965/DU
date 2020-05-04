@@ -31,14 +31,23 @@
                             'url' => ['/'],
                            
                         ],
+
+                       
                         [
                             'label' => 'PROFORMA',
                             'icon' => 'gears',
                             'url' => ['/proposal/research-proposal'],
                            
                         ],
+                        [
+                            'label' => 'User Activity Log',
+                            'icon' => 'gears',
+                            'url' => ['/audit-entry'],
+                               
+                        ],
                     ],
                 ]
+                
         )
         ?>
 

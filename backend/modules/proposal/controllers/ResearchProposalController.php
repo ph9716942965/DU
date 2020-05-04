@@ -19,7 +19,26 @@ class ResearchProposalController extends Controller
      */
     public function behaviors()
     {
+        $_permission = ['index','view','delete', 'update'];
+        $_public_permission = ['create'];
+        
         return [
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+              
+                'rules' => [
+                    [
+                        'actions' => $_public_permission,
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' =>  $_permission,
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

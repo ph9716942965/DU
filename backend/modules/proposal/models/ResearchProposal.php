@@ -3,7 +3,7 @@
 namespace backend\modules\proposal\models;
 
 use Yii;
-
+use backend\components\AuditEntryBehaviors;
 /**
  * This is the model class for table "research_proposal".
  *
@@ -43,6 +43,16 @@ use Yii;
  */
 class ResearchProposal extends \yii\db\ActiveRecord
 {
+
+    public function behaviors(){
+        return [ 
+            
+            'auditEntryBehaviors' => [
+                'class' => AuditEntryBehaviors::class
+             ],
+            
+        ];
+    }
     /**
      * {@inheritdoc}
      */
